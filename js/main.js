@@ -129,7 +129,7 @@ navigator.geolocation.getCurrentPosition(position => {
             return res.json()
         })
         .then(data => {
-            const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+            const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
             document.getElementById("weather").innerHTML = `
                 <img src=${iconUrl} />
                 <p class="weather-temp">${Math.round(data.main.temp)}º</p>
