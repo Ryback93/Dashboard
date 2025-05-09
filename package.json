@@ -1,5 +1,5 @@
 {
-  "name": "Dashboard",
+  "name": "dashboard",
   "description": "",
   "scripts": {
     "start": "vite",
