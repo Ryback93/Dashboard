@@ -3,17 +3,39 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="index.css">
         <title>Personal Dashboard</title>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <main>    
             <div class="top">
                 <div id="crypto">
-                    <div id="crypto-top"></div>
+                    <div class="crypto-header">
+                      <h3>Cryptocurrencies</h3>
+                      <select id="crypto-selector">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="dogecoin" selected>Dogecoin</option>
+                        <option value="solana">Solana</option>
+                      </select>
+                    </div>
+                    <div id="crypto-data"></div>
+                  </div>
+                  <div id="weather"></div>
+                  <div id="music-controls">
+                    <div id="spotify-player"></div>
+                    <div class="playlist-selector">
+                      <button data-playlist="37i9dQZF1DX76Wlfdnj7AP">Workout</button>
+                      <button data-playlist="37i9dQZF1DX9uKNf5jGX6m">Focus</button>
+                      <button data-playlist="37i9dQZF1DX4WYpdgoIcn6">Chill</button>
+                    </div>
+                  </div>
                 </div>
-                <div id="weather"></div>
+            <div class="time-container">
+                <h2 id="greeting" class="greeting"></h2>
+                <h1 id="time" class="time"></h1>
             </div>
-            
-            <h1 id="time" class="time"></h1>
+            <blockquote id="quote" class="quote"></blockquote>
             <p id="author"></p>
         </main>
         <script src="index.js"></script>
